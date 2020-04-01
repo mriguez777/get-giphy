@@ -11,28 +11,35 @@
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <div class="container">
 
         <div class="row">
 
+            <div class="col-md-12" id="giphButtons"></div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="inputForm">
+                        <span id="giphName">Search for Giphs Here: <input type="text" name="giph">
+                            <br>
+                            <button type="submit" class="btn btn-success">Search</button>
+                        </span>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 id=query></h2>
+                    <div id="giphArray"></div>
+                </div>
+            </div>
 
         </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="giphy.js"></script>
     </div>
-
-
-    <script type="text/javascript">
-
-
-    </script>
-
-    <!-- jQuery JS -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-    <script src="giphy.js"></script>
-
 </body>
 
 </html>
