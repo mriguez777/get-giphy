@@ -17,15 +17,13 @@ $(document).ready(function () {
   document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
   /*First I need to start with an Array so that we can add to it. Then add other global variables that I need to work with
   I chose to break down the API URL so I can mess with the parameters a bit*/
-  var gipher = ["camping", "fishing", "swimming", "Smore", "marshmallow"];
+  var gipher = ["camping",  "fishing", "swimming", "Smore", "marshmallow"];
 
   for (var i = 0; i < gipher.length; i++) {
     var creatingButtons = $('<button class="btn btn-success">');
     creatingButtons.text(gipher[i]);
     $("#giphButtons").append(creatingButtons)
-  }
-  ;
-
+  };
 
   $("#inputForm").on("submit", function (e) {
     e.preventDefault();
@@ -38,8 +36,6 @@ $(document).ready(function () {
     // console.log(url);
 
     $("#query").text("Results: " + search)
-
-
 
     $.get(url, function (output) {
       // console.log(output);
@@ -58,9 +54,8 @@ $(document).ready(function () {
       };
     }).then(function () {
       var buttonGiph = $('<button class="btn btn-success">');
-      var data = $(buttonGiph).text(search)
+        $(buttonGiph).text(search)
         $("#giphButtons").append(buttonGiph)
-
     })
 
   });
