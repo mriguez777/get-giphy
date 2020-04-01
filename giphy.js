@@ -28,7 +28,7 @@ $(document).ready(function () {
   $("#inputForm").on("submit", function (e) {
     e.preventDefault();
 
-    var api = "http://api.giphy.com/v1/gifs/search?";
+    var api = "https://api.giphy.com/v1/gifs/search?";
     var apiKey = "api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=3";
     var query = "&q=";
     var search = $("input[name='giph']").val();
